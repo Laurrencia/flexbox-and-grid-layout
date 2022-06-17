@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 95%) ;
+    
+}
+header{
+    text-align: center;
+    padding-top: 10px;
+}
+header a{
+    font-size:40px ;
+    font-weight: 400;
+    color: red;
+    text-decoration: none;
+    border: 1px solid red;
+}
+header a:hover{
+    color:green;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 100px auto;
+    max-width: 1440px;
+    /* margin-top: 100px; */
+    
+}
+
+h3{
+    color: hsl(0, 0%, 95%) ;
+   font-family: 'Big Shoulders Display', cursive;
+   margin-top: 20px;
+   
+   
+
+}
+.box1{
+    background-color: hsl(31, 77%, 52%) ;
+    padding: 2em;
+    font-family: 'Lexened Deca', sans-serif; 
+    color: hsla(0, 0%, 100%, 0.75) ;
+    font-size: 15px;
+    border-radius: 10px 0px 0px 10px;
+    flex: 1 1 0;
+    align-self: stretch;
+
+}
+.box2{
+    background-color:hsl(184, 100%, 22%) ;
+    padding: 2em;
+    font-family: 'Lexened Deca', sans-serif; 
+    color: hsla(0, 0%, 100%, 0.75) ;
+    font-size: 15px;
+    flex: 1 1 0;
+    align-self: stretch;
+    
+    
+    
+}
+.box3{
+    background-color: hsl(179, 100%, 13%);
+    padding: 2em;
+    font-family: 'Lexened Deca', sans-serif; 
+    color: hsla(0, 0%, 100%, 0.75) ;
+    font-size: 15px;
+    border-radius: 0px 10px 10px 0px;
+    flex: 1 1 0;
+    align-self: stretch;
+
+
+}
+p{
+    margin: 50px 0;
+}
+a{
+    background-color: hsl(0, 0%, 95%) ;
+    border-radius: 20px;
+    margin-top: 80px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+a:active{
+    color: hsl(0,0%,100%);
+    transition: 0.45;
+    border:2px solid #fff ;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn1{
+    margin-top: 70px;
+    color:hsl(31, 77%, 52%) ;
+    
+}
+.btn2{
+    margin-top: 100px;
+    color:hsl(184, 100%, 22%) ;
+}
+.btn3{
+    margin-top: 70px;
+    color:hsl(179, 100%, 13%) ;
+}
+
+
+/* media querry */
+@media screen and (max-width:1200px){
+    .flex-container{width: 70%; }   
+}
+
+@media screen and (max-width:700px){
+    .flex-container{flex-direction: column; }
+    .box1{border-radius: 10px 10px 0px 0px;}
+    .box3{border-radius: 0px 0px 10px 10px;}
+    
+}
+
+@media screen and (max-width:375px){
+    .flex-container{flex-direction: column; }
+    
+}
